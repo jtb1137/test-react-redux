@@ -7,24 +7,21 @@ export const ListInputs = ({ addItem }) => {
       id: 10,
       name: 'Roasted Turkey',
       category: 'Deli',
-      deliveryMethod: 'Ground',
-    }
+      deliveryMethod: 'Ground'
+    };
 
     addItem(item);
-  }
+  };
 
   return (
-    <button
-      className="addItemButton"
-      onClick={createItem}
-    >
+    <button className="addItemButton" onClick={createItem}>
       Add Random Item
     </button>
   );
 };
 
 ListInputs.propTypes = {
-  addItem: PropTypes.func.isRequired,
+  addItem: PropTypes.func.isRequired
 };
 
 export default ListInputs;
